@@ -1,10 +1,11 @@
+import Link from "next/link";
 import Logo from "./Logo";
 
 export default function Footer() {
   return (
     <footer className="bg-navy-900 text-slate-300 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 sm:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Logo className="h-14 w-auto" monochrome="light" />
             <p className="mt-4 text-sm text-slate-400 max-w-xs">
@@ -48,11 +49,33 @@ export default function Footer() {
               <li>BTW: NL005304618B68</li>
             </ul>
           </div>
+
+          <div>
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-white">
+              Juridisch
+            </h2>
+            <ul className="mt-4 space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/algemene-voorwaarden"
+                  className="hover:text-brand-400 transition-colors"
+                >
+                  Algemene voorwaarden
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-navy-700 text-xs text-slate-400 text-center">
-          &copy; {new Date().getFullYear()} Suurmond Technical Solutions. Alle
-          rechten voorbehouden.
+        <div className="mt-10 pt-6 border-t border-navy-700 text-xs text-slate-400 text-center space-y-1">
+          <p>
+            &copy; {new Date().getFullYear()} Suurmond Technical Solutions. Alle
+            rechten voorbehouden.
+          </p>
+          <p>
+            Deze website gebruikt geen cookies en verwerkt geen persoonsgegevens.
+            E-mailcorrespondentie wordt vertrouwelijk behandeld en niet met derden gedeeld.
+          </p>
         </div>
       </div>
     </footer>

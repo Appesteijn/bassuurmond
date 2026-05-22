@@ -8,5 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1.0,
     },
+    {
+      url: "https://bassuurmond.nl/algemene-voorwaarden",
+      lastModified: new Date("2025-05-22"),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
   ];
 }
