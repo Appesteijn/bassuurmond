@@ -28,6 +28,21 @@ export const metadata: Metadata = {
     siteName: "Suurmond Technical Solutions",
     type: "website",
     locale: "nl_NL",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Suurmond Technical Solutions — Technische dienstverlening & advies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Suurmond Technical Solutions",
+    description:
+      "Technische dienstverlening en advies. Ontwerpen, installeren, aanpassen en onderhouden van technische systemen en maatwerkoplossingen.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
@@ -58,10 +73,18 @@ export default function RootLayout({
               url: "https://bassuurmond.nl",
               telephone: "+31653790501",
               email: "sts@bassuurmond.nl",
+              image: "https://bassuurmond.nl/opengraph-image",
               address: {
                 "@type": "PostalAddress",
-                addressRegion: "Zeeland",
+                addressLocality: "Zeeland",
+                addressRegion: "Noord-Brabant",
                 addressCountry: "NL",
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "08:00",
+                closes: "18:00",
               },
               contactPoint: {
                 "@type": "ContactPoint",
