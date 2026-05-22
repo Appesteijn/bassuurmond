@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand: groen accent uit het logo */
+  --color-brand-50: #effaee;
+  --color-brand-100: #d6f2d3;
+  --color-brand-200: #aee5a8;
+  --color-brand-300: #82d57b;
+  --color-brand-400: #5ec256;
+  --color-brand-500: #4fb23c;
+  --color-brand-600: #3a9029;
+  --color-brand-700: #2f7223;
+  --color-brand-800: #285a1f;
+  --color-brand-900: #22491b;
+
+  /* Navy: tekst & headers uit het logo */
+  --color-navy-50: #f3f6fa;
+  --color-navy-100: #e3ebf4;
+  --color-navy-200: #c1d1e3;
+  --color-navy-300: #93afcc;
+  --color-navy-400: #6488ae;
+  --color-navy-500: #436b94;
+  --color-navy-600: #34547a;
+  --color-navy-700: #2a4364;
+  --color-navy-800: #233852;
+  --color-navy-900: #1b3556;
+
+  /* Neutrale grijzen */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-navy-900);
+}
