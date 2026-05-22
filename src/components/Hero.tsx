@@ -25,7 +25,7 @@ export default function Hero() {
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
             Doordachte techniek,
             <br />
-            <span className="text-brand-400">netjes uitgevoerd.</span>
+            <span className="text-brand-400">vakkundig uitgevoerd.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl">
             Van kleine aanpassingen tot complete projecten — ontwerpen,
