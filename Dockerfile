@@ -17,6 +17,8 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED 1
+ENV NEXT_PUBLIC_UMAMI_URL=https://analytics.campcraftbuilders.nl
+ENV NEXT_PUBLIC_UMAMI_WEBSITE_ID=dd28f787-e68e-414f-9ae5-f24c40893868
 
 RUN npm run build
 

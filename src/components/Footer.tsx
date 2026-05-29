@@ -73,7 +73,7 @@ export default function Footer() {
             rechten voorbehouden.
           </p>
           <p>
-            Deze website gebruikt geen cookies en verwerkt geen persoonsgegevens.
+            Deze website gebruikt geen cookies. Bezoekersstatistieken worden anoniem bijgehouden via Umami Analytics — er worden geen persoonsgegevens opgeslagen.
             E-mailcorrespondentie wordt vertrouwelijk behandeld en niet met derden gedeeld.
           </p>
         </div>
