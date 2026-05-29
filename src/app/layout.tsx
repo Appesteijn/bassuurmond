@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -58,6 +59,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const umamiUrl = process.env.NEXT_PUBLIC_UMAMI_URL;
+  const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
+
   return (
     <html lang="nl" className={inter.variable}>
       <body className="antialiased font-sans">
@@ -100,6 +104,13 @@ export default function RootLayout({
             }),
           }}
         />
+        {umamiUrl && umamiWebsiteId && (
+          <Script
+            src={`${umamiUrl}/script.js`}
+            data-website-id={umamiWebsiteId}
+            strategy="afterInteractive"
+          />
+        )}
         {children}
       </body>
     </html>
